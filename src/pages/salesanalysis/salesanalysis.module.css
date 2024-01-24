@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
+    display: grid;
+    grid-template-rows: 0.8fr 0.5fr;
+    gap: 0.7rem;
+    z-index: 9999999;
+}
+
+.up{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.down{
+width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+    overflow: hidden;
+}
+
+.alltop{
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    background-color: #f4f8f9;
+}
+
+.alldown{
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    background-color: #f4f8f9;
+}
+
+.alldown>div {
+    padding: 0.5rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: max-content;
+}
+
+.alltop >div{
+    padding: 1rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: max-content;
+}
+
+.alltop >div>h3{
+    font-size: 1rem;
+}
+
+.alltop>div>select, .alldown>div>select{
+   border: 1px solid #4a9fbe;
+   padding: 0.4rem 0.4rem; 
+   color: rgb(74, 159, 190);
+   border-radius: 2px;
+}
+
+
+.alltop>section, .alldown>section{
+    width: 100%;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        grid-template-rows: unset;
+    }
+    .up {
+        grid-template-columns: 1fr;
+    }
+    .down{
+        grid-template-columns: 1fr;
+    }
+    section{
+        height: fit-content;
+    }
+    
+}

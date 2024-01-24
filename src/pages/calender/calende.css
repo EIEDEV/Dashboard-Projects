@@ -1,0 +1,40 @@
+.calendar-container{
+    z-index: 9999;
+    height: 100%;
+    padding: 0 1.5rem ;
+    color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.calendar-container >div{
+    background-color:#2c3145;
+    z-index: 99999;
+    border: none;
+    overflow-y: none !important;
+}
+
+.fc-event{
+    background: grey;
+    color: black;
+    font-weight: 400;
+    
+}
+
+.fc .fc-timegrid-slot{
+    height: 2.5rem !important;
+}
+
+td{
+    border: 1px solid black !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .calendar-container{
+        height: 100vh;
+    }
+    .calendar-container>div{
+        height: 100%;
+    }
+}

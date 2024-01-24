@@ -1,0 +1,41 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    z-index: 0;
+}
+
+.sidebar{
+    height: 100vh;
+    flex-basis: 5%;
+    background: #192030;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.fullpage{
+    width: 100%;
+    height: 100%;
+    background-color: #e0e2f1;
+    z-index: 0;
+} 
+
+@media screen and (max-width: 1024px) {
+    .container{
+        overflow: scroll;
+        height: max-content;
+    }
+
+    .sidebar{
+        position: absolute;
+        right: 2%;
+        top: 15%;
+        padding: 0 2rem;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+}

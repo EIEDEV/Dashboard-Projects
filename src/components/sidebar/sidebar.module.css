@@ -1,0 +1,54 @@
+.container, .navlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.logo{
+    background-color: #02ade3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+
+.logo img{
+    width: 3rem;
+    aspect-ratio: 1/1;
+}
+
+.navlink{
+    gap: 30px;
+}
+
+.navlink svg{
+    color: white;
+    width: 100%;
+}
+
+.title{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+.navlink{
+    display: flex;
+padding: 0 auto;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+    .title{
+    display: block;
+}
+}
+
+@media screen and (max-width: 600px) {}
